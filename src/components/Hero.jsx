@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
+import { discount, homepage } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
@@ -25,7 +25,7 @@ const Hero = () => {
             <span className="text-gradient">Generation</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
+            {/* <GetStarted /> */}
           </div>
         </div>
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full">
@@ -41,16 +41,16 @@ const Hero = () => {
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
         <img
-          src={robot}
+          src={homepage}
           alt="billing"
-          className="w-[100%] h-[100%] relative z-[5]"
+          className="w-[100%] h-[100%] relative z-[5] rounded-3xl"
         />
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
       </div>
       <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
+        {/* <GetStarted /> */}
       </div>
     </section>
   );
